@@ -2,9 +2,12 @@ Simple Midi controller over USB.
 Using RP Pico2040 in Arduino IDE
 
 On Linux you can use the UDP Packets directly on the Midi-line(Pipewire/Jack/Alsa)
-udpmidi_bridge.c is attached, you can compile it with
+udpmidi_bridge.c is attached, you can compile it with:
 
 gcc udpmidi_bridge.c -o udpmidi_bridge -lasound
+
+#then start the process in a terminal(opened in the same folder):
+
 ./udpmidi_bridge 
 
 or try the attached udpmidi_bridge in the Folder
