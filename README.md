@@ -14,4 +14,4 @@ or try the attached udpmidi_bridge in the Folder
 
 
 
-<img width="1280" height="1280" alt="midi4x4" src="https://github.com/user-attachments/assets/a54cfb5d-f113-4717-993e-9db32bdfc92b" />
+<img width="800" height="800" alt="midi4x4" src="https://github.com/user-attachments/assets/a54cfb5d-f113-4717-993e-9db32bdfc92b" />
