@@ -296,6 +296,7 @@ void menu_check(){
       silence();
     }else{menu|= (1<<6);} 
     printer();   
+    if((GETBIT(keybuffer, 19))==0){binario &= ~KEYS;}
   }
   // Menu button pressed    
   if(GETBIT(keybuffer, 19) != GETBIT(menu, 3)){
@@ -328,7 +329,7 @@ void pin_check(){
   static uint32_t oldest_gpio_state=1;
   oldest_gpio_state=old_gpio_state;
   old_gpio_state=gpio_state;
-  gpio_state=sio_hw->gpio_in;
+  gpio_state=sio_hw->gpio_in;    // takes all pinstates, digitalRead takes only 1
   if((gpio_state == old_gpio_state) && (gpio_state != keybuffer) && (old_gpio_state==oldest_gpio_state)){
     keybuffer=gpio_state;
   } 
