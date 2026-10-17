@@ -7,8 +7,8 @@
 #include <lwip/udp.h>
 #include <lwip/pbuf.h>
 #define GETBIT(x, n) (((x) >> (n)) & 1)       //GETBIT(keybuffer, 19)
-#define WIFI_SSID     "Lucy_2.4G"
-#define WIFI_PASSWORD "!1admin1!"
+#define WIFI_SSID     "network_name"
+#define WIFI_PASSWORD "network_password"
 #define DEST_IP       "192.168.1.158"
 #define DEST_PORT     8080
 #define ALARM_NUM     0
